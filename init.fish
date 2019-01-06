@@ -4,5 +4,5 @@ if type -q direnv
     eval (direnv export fish)
   end
 else
-  echo "Install direnv first! Check http://direnv.net" ^&1
+  echo "Install direnv first! Check http://direnv.net" 2>&1
 end
