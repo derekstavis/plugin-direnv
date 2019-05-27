@@ -1,4 +1,5 @@
 if type -q direnv
+  eval (direnv export fish)
   function __direnv_export_eval --on-variable PWD
     status --is-command-substitution; and return
     eval (direnv export fish)
